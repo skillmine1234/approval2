@@ -1,0 +1,120 @@
+--- !ruby/object:Gem::Specification
+name: approval2
+version: !ruby/object:Gem::Version
+  version: 0.1.9
+platform: ruby
+authors:
+- akil
+autorequire: 
+bindir: exe
+cert_chain: []
+date: 2018-05-02 00:00:00.000000000 Z
+dependencies:
+- !ruby/object:Gem::Dependency
+  name: bundler
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '1.13'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '1.13'
+- !ruby/object:Gem::Dependency
+  name: rake
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '10.0'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '10.0'
+- !ruby/object:Gem::Dependency
+  name: audited
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0'
+  type: :runtime
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0'
+- !ruby/object:Gem::Dependency
+  name: will_paginate
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0'
+  type: :runtime
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0'
+description: 
+email:
+- akhilesh.kataria@quantiguous.com
+executables: []
+extensions: []
+extra_rdoc_files: []
+files:
+- ".gitignore"
+- CODE_OF_CONDUCT.md
+- Gemfile
+- LICENSE.txt
+- README.md
+- Rakefile
+- approval2.gemspec
+- bin/console
+- bin/setup
+- lib/approval2.rb
+- lib/approval2/active_record_adapter.rb
+- lib/approval2/controller_additions.rb
+- lib/approval2/model_additions.rb
+- lib/approval2/version.rb
+- lib/generators/approval2/install/install_generator.rb
+- lib/generators/approval2/install/templates/_approve.html.haml
+- lib/generators/approval2/install/templates/create_unapproved_records.rb
+- lib/generators/approval2/install/templates/index.html.haml
+- lib/generators/approval2/install/templates/unapproved_record.rb
+- lib/generators/approval2/install/templates/unapproved_records_controller.rb
+homepage: http://quantiguous.com
+licenses:
+- MIT
+metadata: {}
+post_install_message: 
+rdoc_options: []
+require_paths:
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement
+  requirements:
+  - - ">="
+    - !ruby/object:Gem::Version
+      version: '0'
+required_rubygems_version: !ruby/object:Gem::Requirement
+  requirements:
+  - - ">="
+    - !ruby/object:Gem::Version
+      version: '0'
+requirements: []
+rubyforge_project: 
+rubygems_version: 2.4.6
+signing_key: 
+specification_version: 4
+summary: Enable the approval pattern for an AR model
+test_files: []
